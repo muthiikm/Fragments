@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Define Theme.LoginScreen -->
+    <style name="Theme.LoginScreen" parent="Theme.Refugee_onboarding">
+        <!-- Add attributes if needed -->
+    </style>
+
+    <style name="Theme.MySplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="android:text"> "EQUITY REFUGEE APP"</item>
+        <item name="postSplashScreenTheme">@style/Theme.LoginScreen</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.Refugee_onboarding" parent="android:Theme.Material.Light.NoActionBar" />
+
+</resources>
