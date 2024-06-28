@@ -2,8 +2,13 @@ package com.example.koin_implementation
 
 import androidx.lifecycle.ViewModel
 
-class MainViewModel: ViewModel() {
-    private val repository = MainRepositoryImp()
+//Constructor injection
+class MainViewModel(
+
+    private val repository:MainRepositoryImp
+
+): ViewModel() {
+
 
     fun doNetworkCall(){
 

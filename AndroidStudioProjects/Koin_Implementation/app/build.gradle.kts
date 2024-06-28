@@ -51,6 +51,15 @@ android {
 
 dependencies {
 
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+    // Koin core features
+    implementation (libs.koin.core)
+
+    // Koin Android features
+    implementation (libs.koin.android)
+    implementation (libs.koin.androidx.viewmodel)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
